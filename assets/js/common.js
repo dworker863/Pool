@@ -35,6 +35,11 @@ $(window).on('load', function () {
   $('.owl-prev').on('click', function () {
     $('.owl-carousel').trigger('prev.owl.carousel', [300]);
   });
+
+  // $(window).on('resize', function () {
+  //   value = $('.calculation-form').width() - 100;
+  //   $('#myRange').css('width', value);
+  // });
 });
 
 const getRange = () => {

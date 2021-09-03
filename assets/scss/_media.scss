@@ -1,6 +1,25 @@
+@media (min-width: 576px) {
+  .calculation-form {
+    padding: 30px;
+    font-size: 16px;
+
+    label {
+      grid-template-columns: 120px auto;
+    }
+  }
+
+  .slidecontainer {
+    grid-template-columns: 120px auto 60px;
+  }
+}
+
 @media (min-width: 768px) {
   .short-description {
     max-width: 400px;
+  }
+
+  .calculation-form {
+    padding: 45px;
   }
 }
 
@@ -50,5 +69,16 @@
 
   .title {
     font-size: 32px;
+  }
+
+  .pool-wrapper {
+    position: relative;
+  }
+
+  .pool {
+    position: absolute;
+    top: -200px;
+    left: -70px;
+    width: auto;
   }
 }
