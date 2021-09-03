@@ -134,39 +134,48 @@
           Ответьте на несколько вопросов и наши специалисты отправят вам смету в
           течении <strong class="strong">1 рабочего дня</strong>
         </p>
-        <form class="calculation-form">
-          <label>
-            Отделка чаши:
-            <select>
-              <option>Полипропилен</option>
-              <option>Полипропилен1</option>
-              <option>Полипропилен2</option>
-            </select>
-          </label>
-          <label>
-            Нагрев воды:
-            <select>
-              <option>Нет</option>
-              <option>Да</option>
-            </select>
-          </label>
-          <label>
-            <div class="slidecontainer">
-              Размер бассейна:
-              <input
-                type="range"
-                min="2"
-                max="20"
-                value="7"
-                class="slider"
-                id="myRange"
-                oninput="getRange()"
-              />
-              <span class="range-value">7x3м</span>
+        <div class="row">
+          <div class="col-12">
+            <form class="calculation-form">
+              <label>
+                Отделка чаши:
+                <select>
+                  <option>Полипропилен</option>
+                  <option>Полипропилен1</option>
+                  <option>Полипропилен2</option>
+                </select>
+              </label>
+              <label>
+                Нагрев воды:
+                <select>
+                  <option>Нет</option>
+                  <option>Да</option>
+                </select>
+              </label>
+              <label>
+                <div class="slidecontainer">
+                  Размер бассейна:
+                  <input
+                    type="range"
+                    min="2"
+                    max="20"
+                    value="7"
+                    class="slider"
+                    id="myRange"
+                    oninput="getRange()"
+                  />
+                  <span class="range-value">7x3м</span>
+                </div>
+              </label>
+              <button class="submit">Оставить заявку</button>
+            </form>
+          </div>
+          <div class="col-12">
+            <div class="pool-wrapper">
+              <img class="pool" src="images/pool.png" alt="Swimmingpool" />
             </div>
-          </label>
-          <button class="submit">Оставить заявку</button>
-        </form>
+          </div>
+        </div>
       </div>
     </section>
     <script src="js/scripts.min.js"></script>

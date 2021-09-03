@@ -265,6 +265,7 @@ body {
   padding: 30px 10px;
   background-color: #fff;
   font-size: 14px;
+  margin-bottom: 40px;
 
   label {
     display: block;
@@ -309,6 +310,10 @@ body {
   width: 100px;
   margin-right: 5px;
   vertical-align: middle;
+}
+
+.pool {
+  width: 100%;
 }
 
 @import 'media';
