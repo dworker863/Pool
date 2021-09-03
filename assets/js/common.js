@@ -36,3 +36,18 @@ $(window).on('load', function () {
     $('.owl-carousel').trigger('prev.owl.carousel', [300]);
   });
 });
+
+const getRange = () => {
+  let multiplier = 2;
+  let value = document.querySelector('#myRange').value;
+
+  if (value >= 5 && value < 10) {
+    multiplier = 3;
+  } else if (value >= 10 && value < 15) {
+    multiplier = 4;
+  } else if (value >= 15 && value <= 20) {
+    multiplier = 5;
+  }
+
+  document.querySelector('.range-value').innerHTML = `${value}x${multiplier}m`;
+};
