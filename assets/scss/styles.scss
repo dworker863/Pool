@@ -9,6 +9,11 @@ a {
   color: $font-color;
 }
 
+button {
+  border: none;
+  outline: none;
+}
+
 body {
   font-family: Gilroy;
   background-color: lightsteelblue;
@@ -125,7 +130,7 @@ body {
 
 .navbar-nav {
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
 }
 
@@ -145,8 +150,40 @@ body {
 }
 
 .phone-numbers {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
+}
+
+.title {
+  max-width: 350px;
+  margin: 0 auto;
+  padding-top: 80px;
+  text-align: center;
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .submit {
+    padding-top: 13px;
+    padding-bottom: 18px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    background: $submit-gradient;
+  }
 }
 
 @import 'media';
