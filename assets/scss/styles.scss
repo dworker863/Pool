@@ -154,18 +154,11 @@ body {
   font-size: 18px;
 }
 
-.title {
-  max-width: 350px;
+.short-description {
+  max-width: 300px;
   margin: 0 auto;
   padding-top: 80px;
   text-align: center;
-
-  h1 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
 
   .description {
     font-weight: 500;
@@ -184,6 +177,62 @@ body {
     color: #fff;
     background: $submit-gradient;
   }
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.our-projects {
+  height: 100vh;
+  text-align: center;
+  background-color: #fff;
+
+  .title {
+    margin-bottom: 0;
+  }
+}
+
+.wave-line {
+  margin-bottom: 20px;
+}
+
+.owl-carousel > div > img {
+  width: 100vw;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+}
+
+.owl-prev,
+.owl-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid $font-color;
+  border-radius: 50%;
+  font-weight: 300;
+  font-size: 24px;
+  color: $font-color;
+
+  &:hover {
+    background-color: $primary;
+    color: #fff;
+    border: none;
+  }
+}
+
+.owl-prev {
+  margin-right: 20px;
 }
 
 @import 'media';

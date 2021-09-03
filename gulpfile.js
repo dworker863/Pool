@@ -11,6 +11,7 @@ function styles() {
   return gulp
     .src([
       'node_modules/bootstrap/dist/css/bootstrap.min.css',
+      './assets/libs/owlCarousel/owl.carousel.min.css',
       './assets/scss/**/*.scss',
     ])
     .pipe(sourcemaps.init())
@@ -28,6 +29,7 @@ function scripts() {
     .src([
       'node_modules/jquery/dist/jquery.slim.min.js',
       'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+      './assets/libs/owlCarousel/owl.carousel.min.js',
       './assets/js/common.js',
     ])
     .pipe(sourcemaps.init())

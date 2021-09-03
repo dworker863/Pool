@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-  .title {
+  .short-description {
     max-width: 400px;
   }
 }
@@ -13,7 +13,7 @@
     width: 100%;
   }
 
-  .title {
+  .short-description {
     max-width: 500px;
     padding-left: 60px;
   }
@@ -30,18 +30,14 @@
     }
   }
 
-  .title {
+  .short-description {
     max-width: 600px;
   }
 }
 
 @media (min-width: 1400px) {
-  .title {
+  .short-description {
     max-width: 600px;
-
-    h1 {
-      font-size: 32px;
-    }
 
     .description {
       font-size: 20px;
@@ -50,5 +46,9 @@
     .submit {
       font-size: 20px;
     }
+  }
+
+  .title {
+    font-size: 32px;
   }
 }
