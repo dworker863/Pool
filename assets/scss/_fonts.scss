@@ -1,0 +1,44 @@
+@mixin fonts($name, $style, $weight, $url-ttf) {
+  @font-face {
+    font-family: $name;
+    font-style: $style;
+    font-weight: $weight;
+    src: url($url-ttf) format('ttf');
+  }
+}
+
+@include fonts('Gilroy', normal, 100, '../fonts/Gilroy-Thin.ttf');
+
+@include fonts('Gilroy', italic, 100, '../fonts/Gilroy-ThinItalic.ttf');
+
+@include fonts('Gilroy', normal, 200, '../fonts/Gilroy-UltaLight.ttf');
+
+@include fonts('Gilroy', italic, 200, '../fonts/Gilroy-UltaLightItalic.ttf');
+
+@include fonts('Gilroy', normal, 300, '../fonts/Gilroy-Light.ttf');
+
+@include fonts('Gilroy', italic, 300, '../fonts/Gilroy-LightItalic.ttf');
+
+@include fonts('Gilroy', normal, 400, '../fonts/Gilroy-Regular.ttf');
+
+@include fonts('Gilroy', italic, 400, '../fonts/Gilroy-RegularItalic.ttf');
+
+@include fonts('Gilroy', normal, 500, '../fonts/Gilroy-Medium.ttf');
+
+@include fonts('Gilroy', italic, 500, '../fonts/Gilroy-MediumItalic.ttf');
+
+@include fonts('Gilroy', normal, 600, '../fonts/Gilroy-SemiBold.ttf');
+
+@include fonts('Gilroy', italic, 600, '../fonts/Gilroy-SemiBoldItalic.ttf');
+
+@include fonts('Gilroy', normal, 700, '../fonts/Gilroy-Bold.ttf');
+
+@include fonts('Gilroy', italic, 700, '../fonts/Gilroy-BoldItalic.ttf');
+
+@include fonts('Gilroy', normal, 800, '../fonts/Gilroy-ExtraBold.ttf');
+
+@include fonts('Gilroy', italic, 800, '../fonts/Gilroy-ExtraBoldItalic.ttf');
+
+@include fonts('Gilroy', normal, 900, '../fonts/Gilroy-Black.ttf');
+
+@include fonts('Gilroy', italic, 900, '../fonts/Gilroy-BlackItalic.ttf');
