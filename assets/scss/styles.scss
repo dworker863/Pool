@@ -100,7 +100,12 @@ body {
   left: 8px;
 }
 
+.animated-icon3 span {
+  background-color: $font-color;
+}
+
 .header {
+  padding-top: 20px;
   height: 100vh;
   background-image: url(../images/header-bg.png);
   background-size: cover;
@@ -125,5 +130,11 @@ body {
 
   &.active {
     color: $active-color;
+  }
+}
+
+.logo-wrapper {
+  .logo img {
+    width: 80px;
   }
 }
