@@ -1,3 +1,9 @@
+@media (min-width: 768px) {
+  .title {
+    max-width: 400px;
+  }
+}
+
 @media (min-width: 992px) {
   .logo-wrapper {
     text-align: center;
@@ -5,6 +11,11 @@
 
   .navbar-nav {
     width: 100%;
+  }
+
+  .title {
+    max-width: 500px;
+    padding-left: 60px;
   }
 }
 
@@ -16,6 +27,28 @@
   .logo-wrapper {
     .logo img {
       width: auto;
+    }
+  }
+
+  .title {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .title {
+    max-width: 600px;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .description {
+      font-size: 20px;
+    }
+
+    .submit {
+      font-size: 20px;
     }
   }
 }
