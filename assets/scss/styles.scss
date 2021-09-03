@@ -16,7 +16,6 @@ button {
 
 body {
   font-family: Gilroy;
-  background-color: lightsteelblue;
   color: $font-color;
 }
 
@@ -160,12 +159,6 @@ body {
   padding-top: 80px;
   text-align: center;
 
-  .description {
-    font-weight: 500;
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
   .submit {
     padding-top: 13px;
     padding-bottom: 18px;
@@ -179,6 +172,12 @@ body {
   }
 }
 
+.description {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
 .title {
   text-transform: uppercase;
   font-weight: 700;
@@ -188,6 +187,7 @@ body {
 
 .our-projects {
   padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   background-color: #fff;
 
@@ -239,6 +239,22 @@ body {
 
 .owl-prev {
   margin-right: 20px;
+}
+
+.calculator {
+  height: 100vh;
+  padding-top: 100px;
+  background-image: url('../images/calculator-bg.png');
+  background-size: cover;
+  text-align: center;
+
+  .title {
+    margin-bottom: 0;
+  }
+}
+
+.strong {
+  color: #00497c;
 }
 
 @import 'media';
