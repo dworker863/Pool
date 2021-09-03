@@ -112,6 +112,10 @@ body {
   background-position: 70%;
 }
 
+.navbar {
+  width: 100%;
+}
+
 .navbar-toggler {
   border: none;
   &:focus {
@@ -134,7 +138,15 @@ body {
 }
 
 .logo-wrapper {
+  text-align: right;
   .logo img {
     width: 80px;
   }
 }
+
+.phone-numbers {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@import 'media';

@@ -1,0 +1,21 @@
+@media (min-width: 992px) {
+  .logo-wrapper {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-custom {
+    max-width: 1000px;
+  }
+
+  .logo-wrapper {
+    .logo img {
+      width: auto;
+    }
+  }
+}
