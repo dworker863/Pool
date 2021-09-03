@@ -187,7 +187,7 @@ body {
 }
 
 .our-projects {
-  height: 100vh;
+  padding-top: 20px;
   text-align: center;
   background-color: #fff;
 
@@ -200,14 +200,20 @@ body {
   margin-bottom: 20px;
 }
 
-.owl-carousel > div > img {
-  width: 100vw;
+.owl-carousel {
+  max-width: 1385px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  div > img {
+    width: 100vw;
+  }
 }
 
 .owl-nav {
   display: flex;
   justify-content: center;
   width: auto;
+  margin-top: 20px;
   text-align: center;
 }
 

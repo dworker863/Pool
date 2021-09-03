@@ -17,15 +17,14 @@ $(window).on('load', function () {
       0: {
         items: 1,
       },
-      900: {
+      450: {
         items: 2,
       },
-      1200: {
+      880: {
         items: 3,
       },
-      1400: {
-        items: 4,
-        loop: false,
+      1385: {
+        autoWidth: true,
       },
     },
   });
