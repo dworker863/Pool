@@ -36,10 +36,11 @@ $(window).on('load', function () {
     $('.owl-carousel').trigger('prev.owl.carousel', [300]);
   });
 
-  // $(window).on('resize', function () {
-  //   value = $('.calculation-form').width() - 100;
-  //   $('#myRange').css('width', value);
-  // });
+  $('.goods-type').on('click', function () {
+    const th = this;
+    $('.goods-type.active').removeClass('active');
+    $(this).addClass('active');
+  });
 });
 
 const getRange = () => {

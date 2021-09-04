@@ -9,6 +9,13 @@ a {
   color: $font-color;
 }
 
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 button {
   border: none;
   outline: none;
@@ -243,8 +250,8 @@ body {
 }
 
 .calculator {
-  height: 100vh;
   padding-top: 100px;
+  padding-bottom: 50px;
   background-image: url('../images/calculator-bg.png');
   background-size: cover;
   text-align: center;
@@ -343,6 +350,28 @@ body {
 .range-value {
   margin-top: 2px;
   margin-left: 20px;
+}
+
+.goods {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.goods-types {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.goods-type {
+  display: inline-block;
+  line-height: 1.2rem;
+  border-bottom: 1px solid $font-color;
+
+  &.active {
+    color: $active-color;
+    border: none;
+  }
 }
 
 @import 'media';
