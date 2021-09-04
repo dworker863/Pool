@@ -32,6 +32,15 @@
     padding-bottom: 60px;
     height: auto;
   }
+
+  .contacts {
+    top: 20px;
+    left: 80px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -97,6 +106,20 @@
   .short-description {
     max-width: 600px;
   }
+
+  .contacts {
+    top: 80px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  .contacts-title {
+    margin-bottom: 40px;
+    font-weight: 700px;
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -129,5 +152,9 @@
 
   .benefit-item {
     font-size: 22px;
+  }
+
+  .contacts {
+    left: 200px;
   }
 }

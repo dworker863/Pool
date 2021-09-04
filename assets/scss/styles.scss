@@ -463,7 +463,8 @@ body {
 
 .questions {
   position: relative;
-  height: 75vh;
+  height: 100vh;
+  padding-bottom: 20px;
   background-image: url('../images/questions-bg.png');
   background-size: cover;
   background-position: 70%;
@@ -501,11 +502,28 @@ body {
 }
 
 .footer {
+  position: relative;
   height: 50vh;
 }
 
 #map {
   width: 100%;
+}
+
+.contacts {
+  position: absolute;
+  top: 220px;
+  left: 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contacts-title {
+  margin-bottom: 20px;
+  font-weight: 700px;
+  font-size: 20px;
 }
 
 @import 'media';
