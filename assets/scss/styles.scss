@@ -242,6 +242,7 @@ body {
     background-color: $primary;
     color: #fff;
     border: none;
+    cursor: pointer;
   }
 }
 
@@ -428,8 +429,8 @@ body {
 }
 
 .card {
-  margin-left: 5px;
   height: 100%;
+  margin-left: 5px;
 }
 
 .benefit {

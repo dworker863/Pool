@@ -9,7 +9,7 @@ $(window).on('load', function () {
     $(th).children('.nav-link').addClass('active');
   });
 
-  $('.owl-carousel').owlCarousel({
+  $('.owl-one').owlCarousel({
     loop: true,
     autoHeight: true,
     responsiveClass: true,
@@ -42,11 +42,11 @@ $(window).on('load', function () {
     $(this).addClass('active');
   });
 
-  $('.goods .owl-carousel').owlCarousel({
+  $('.owl-two').owlCarousel({
     loop: true,
     autoHeight: true,
+    autoWidth: false,
     responsiveClass: true,
-    center: true,
     responsive: {
       0: {
         items: 1,
@@ -57,9 +57,8 @@ $(window).on('load', function () {
       880: {
         items: 3,
       },
-      1200: {
+      1400: {
         items: 4,
-        autoWidth: true,
       },
     },
   });
