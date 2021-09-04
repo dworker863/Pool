@@ -432,4 +432,29 @@ body {
   height: 100%;
 }
 
+.benefit {
+  padding-top: 100px;
+  height: 100vh;
+  background-image: url('../images/benefit-bg.png');
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+
+  .wave-line {
+    margin-bottom: 40px;
+  }
+}
+
+.benefit-item {
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 18px;
+
+  img {
+    width: 50px;
+  }
+}
+
 @import 'media';
