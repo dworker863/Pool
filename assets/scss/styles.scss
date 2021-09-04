@@ -374,4 +374,42 @@ body {
   }
 }
 
+.goods-items {
+  position: relative;
+  .owl-nav {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-60px);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+
+      &:hover {
+        background-color: $primary;
+        color: #fff;
+      }
+    }
+
+    .owl-prev {
+      left: 15px;
+    }
+
+    .owl-next {
+      right: 15px;
+    }
+  }
+}
+
+.card {
+  margin-left: 5px;
+}
+
 @import 'media';

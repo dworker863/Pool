@@ -41,6 +41,26 @@ $(window).on('load', function () {
     $('.goods-type.active').removeClass('active');
     $(this).addClass('active');
   });
+
+  $('.goods .owl-carousel').owlCarousel({
+    loop: true,
+    autoHeight: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      450: {
+        items: 2,
+      },
+      880: {
+        items: 3,
+      },
+      1385: {
+        autoWidth: true,
+      },
+    },
+  });
 });
 
 const getRange = () => {
