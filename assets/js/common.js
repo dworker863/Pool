@@ -78,3 +78,14 @@ const getRange = () => {
 
   document.querySelector('.range-value').innerHTML = `${value}x${multiplier}m`;
 };
+
+let map;
+
+DG.then(function () {
+  map = DG.map('map', {
+    center: [43.241565, 76.907719],
+    zoom: 15,
+  });
+
+  DG.marker([43.241908, 76.913893]).addTo(map);
+});
