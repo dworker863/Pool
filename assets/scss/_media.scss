@@ -21,6 +21,11 @@
   .calculation-form {
     padding: 45px;
   }
+
+  .benefit {
+    padding-bottom: 60px;
+    height: auto;
+  }
 }
 
 @media (min-width: 992px) {
@@ -51,6 +56,18 @@
 
   .card {
     margin-right: 40px;
+  }
+
+  .benefit {
+    padding-top: 100px;
+  }
+
+  .benefit-item {
+    font-size: 20px;
+
+    img {
+      width: auto;
+    }
   }
 }
 
@@ -96,5 +113,9 @@
     top: -200px;
     left: -70px;
     width: auto;
+  }
+
+  .benefit-item {
+    font-size: 22px;
   }
 }

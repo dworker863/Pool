@@ -433,8 +433,8 @@ body {
 }
 
 .benefit {
-  padding-top: 100px;
-  height: 100vh;
+  padding-top: 160px;
+  height: 120vh;
   background-image: url('../images/benefit-bg.png');
   background-size: cover;
   color: #fff;
@@ -453,6 +453,7 @@ body {
   font-size: 18px;
 
   img {
+    margin-bottom: 10px;
     width: 50px;
   }
 }
