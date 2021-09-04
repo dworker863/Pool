@@ -168,8 +168,8 @@ body {
 }
 
 .submit {
-  padding-top: 13px;
-  padding-bottom: 18px;
+  padding-top: 10px;
+  padding-bottom: 15px;
   padding-right: 30px;
   padding-left: 30px;
   border-radius: 10px;
@@ -354,28 +354,47 @@ body {
 
 .goods {
   padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
+
+  .submit {
+    background: $primary;
+  }
 }
 
 .goods-types {
-  display: flex;
-  justify-content: space-around;
   margin-bottom: 50px;
 }
 
 .goods-type {
   display: inline-block;
   line-height: 1.2rem;
+  margin-right: 40px;
   border-bottom: 1px solid $font-color;
 
   &.active {
     color: $active-color;
     border: none;
   }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .goods-items {
   position: relative;
+  .owl-carousel {
+    max-width: 100%;
+    .owl-stage {
+      display: flex;
+      align-items: stretch;
+
+      .owl-item > div {
+        height: 100%;
+      }
+    }
+  }
   .owl-nav {
     position: absolute;
     z-index: 2;
@@ -410,6 +429,7 @@ body {
 
 .card {
   margin-left: 5px;
+  height: 100%;
 }
 
 @import 'media';

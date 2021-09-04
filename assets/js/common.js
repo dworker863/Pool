@@ -46,6 +46,7 @@ $(window).on('load', function () {
     loop: true,
     autoHeight: true,
     responsiveClass: true,
+    center: true,
     responsive: {
       0: {
         items: 1,
@@ -56,7 +57,8 @@ $(window).on('load', function () {
       880: {
         items: 3,
       },
-      1385: {
+      1200: {
+        items: 4,
         autoWidth: true,
       },
     },
