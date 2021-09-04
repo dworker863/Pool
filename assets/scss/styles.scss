@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'fonts';
+@import 'libs';
 
 * {
   box-sizing: border-box;
@@ -7,6 +8,10 @@
 
 a {
   color: $font-color;
+  text-decoration: none;
+  &:hover {
+    color: $font-color;
+  }
 }
 
 ul,
@@ -19,6 +24,12 @@ li {
 button {
   border: none;
   outline: none;
+}
+
+.fas,
+.far {
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 10px;
 }
 
 body {

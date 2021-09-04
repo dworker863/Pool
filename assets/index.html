@@ -41,10 +41,10 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Товары</a>
+                    <a class="nav-link" href="#goods">Товары</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Контакты</a>
+                    <a class="nav-link" href="#footer">Контакты</a>
                   </li>
                 </ul>
               </div>
@@ -95,7 +95,9 @@
                 “под ключ” до обслуживания или реконструкции вашего бассейна, а
                 также большой выбор товаров
               </p>
-              <button class="submit">Оставить заявку</button>
+              <a type="button" href="#submit-form" class="submit"
+                >Оставить заявку</a
+              >
             </div>
           </div>
         </div>
@@ -178,9 +180,9 @@
         </div>
       </div>
     </section>
-    <section class="goods">
+    <section id="goods" class="goods">
       <div class="container container-custom">
-        <h2 class="title">сколько будет стоить бассейн?</h2>
+        <h2 class="title">Товары для бассейна</h2>
         <div class="wave-line">
           <img src="images/wave-line.png" alt="wave-line" />
         </div>
@@ -283,7 +285,7 @@
         </div>
       </div>
     </section>
-    <section class="questions">
+    <section id="submit-form" class="questions">
       <div class="overlay-bg">
         <img src="images/overlay-bg.png" alt="" />
         <h2 class="title">сколько будет стоить бассейн?</h2>
@@ -300,13 +302,18 @@
         </form>
       </div>
     </section>
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div id="map" style="width: 100%; height: 100%"></div>
       <div class="contacts">
         <h3 class="contacts-title">Контакты</h3>
-        <p class="address">Казахстан, Алматы, Байзакова, 263, 1 этаж, 5 офис</p>
-        <p class="tel-number">+7 727 368 83 56, +7 771 964 36 50</p>
-        <p class="mail">info@pool.kz</p>
+        <p class="address">
+          <i class="fas fa-map-marker-alt"></i>Казахстан, Алматы, Байзакова,
+          263, 1 этаж, 5 офис
+        </p>
+        <p class="tel-number">
+          <i class="fas fa-phone-alt"></i> +7 727 368 83 56, +7 771 964 36 50
+        </p>
+        <p class="mail"><i class="fas fa-at"></i>info@pool.kz</p>
       </div>
     </footer>
     <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
