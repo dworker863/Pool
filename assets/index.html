@@ -8,7 +8,8 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
+    <a href="#home" class="scroll d-none"><i class="fas fa-chevron-up"></i></a>
+    <header id="home" class="header">
       <div class="container container-custom">
         <div class="row">
           <div class="col-8 col-lg-5 d-xl-flex align-items-center">
@@ -39,12 +40,27 @@
                     <a class="nav-link active" aria-current="page" href="#"
                       >Главная</a
                     >
+                    <img
+                      src="images/wave-line.png"
+                      alt=""
+                      class="item-active"
+                    />
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#goods">Товары</a>
+                    <img
+                      src="images/wave-line.png"
+                      alt=""
+                      class="item-active d-none"
+                    />
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#footer">Контакты</a>
+                    <img
+                      src="images/wave-line.png"
+                      alt=""
+                      class="item-active d-none"
+                    />
                   </li>
                 </ul>
               </div>
@@ -78,10 +94,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Товары</a>
+                <a class="nav-link" href="#goods">Товары</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Контакты</a>
+                <a class="nav-link" href="#footer">Контакты</a>
               </li>
             </ul>
           </div>
@@ -188,12 +204,12 @@
         </div>
         <ul class="goods-types">
           <li class="goods-type active">Все</li>
-          <li class="goods-type">Насосы</li>
-          <li class="goods-type">Нагреватели</li>
+          <li class="goods-type pumps">Насосы</li>
+          <li class="goods-type heaters">Нагреватели</li>
         </ul>
         <div class="goods-items">
           <div class="owl-two owl-carousel">
-            <div>
+            <div data-type="heaters">
               <div class="card">
                 <img
                   src="images/goods-image1.png"
@@ -207,7 +223,7 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div data-type="pumps">
               <div class="card">
                 <img
                   src="images/goods-image2.png"
@@ -219,7 +235,7 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div data-type="heaters">
               <div class="card">
                 <img
                   src="images/goods-image1.png"
@@ -233,7 +249,7 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div data-type="pumps">
               <div class="card">
                 <img
                   src="images/goods-image2.png"
@@ -256,6 +272,9 @@
     </section>
     <section class="benefit">
       <div class="container">
+        <div class="leafs d-none d-lg-block">
+          <img src="images/leafs.png" alt="Leafs" />
+        </div>
         <h2 class="title">что вы получаете?</h2>
         <div class="wave-line">
           <img src="images/wave-line-white.png" alt="wave-line" />
@@ -295,10 +314,29 @@
         <p class="description">
           Оставьте заявку и наши специалисты свяжутся с вами в ближайшее время
         </p>
-        <form class="client-contacts">
-          <input type="text" placeholder="Имя" />
-          <input type="text" placeholder="Телефон" />
-          <button class="submit">Отправить</button>
+        <form method="#" novalidate class="client-contacts">
+          <input type="hidden" name="project_name" value="Pool" />
+          <input
+            type="hidden"
+            name="admin_email"
+            value="dworker863@gmail.com"
+          />
+          <input type="hidden" name="form_subject" value="Test" />
+          <input
+            type="text"
+            name="fullname"
+            class="form-control"
+            placeholder="Имя"
+            required
+          />
+          <input
+            type="text"
+            name="phone"
+            class="form-control"
+            placeholder="Телефон"
+            required
+          />
+          <button type="submit" class="submit">Отправить</button>
         </form>
       </div>
     </section>

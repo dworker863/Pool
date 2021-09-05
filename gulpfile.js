@@ -27,7 +27,7 @@ function styles() {
 function scripts() {
   return gulp
     .src([
-      'node_modules/jquery/dist/jquery.slim.min.js',
+      'node_modules/jquery/dist/jquery.min.js',
       'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
       './assets/libs/owlCarousel/owl.carousel.min.js',
       './assets/js/common.js',
