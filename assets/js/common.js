@@ -89,7 +89,7 @@ $(window).on('load', function () {
     var th = $(this);
     $.ajax({
       type: 'POST',
-      url: 'mail.php', //Change
+      url: '../../mail.php', //Change
       data: th.serialize(),
     }).done(function () {
       console.log(th.serialize());

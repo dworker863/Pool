@@ -55,7 +55,7 @@ function watch() {
 function build(done) {
   gulp.src(['assets/*.html', 'assets/*.php']).pipe(gulp.dest('dist'));
 
-  gulp.src('assets/css/style.css').pipe(gulp.dest('dist/css'));
+  gulp.src('assets/css/styles.css').pipe(gulp.dest('dist/css'));
 
   gulp.src('assets/js/scripts.min.js').pipe(gulp.dest('dist/js'));
 

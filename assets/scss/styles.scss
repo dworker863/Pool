@@ -9,6 +9,9 @@
 a {
   color: $font-color;
   text-decoration: none;
+  &:hover {
+    color: $font-color;
+  }
 }
 
 ul,
@@ -541,6 +544,7 @@ body {
   input {
     display: block;
     margin: 0 auto;
+    max-width: 310px;
     padding: 10px 20px;
     border: 1px solid rgba(#000, 0.2);
     border-radius: 5px;
