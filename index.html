@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="#home" class="scroll d-none"><i class="fas fa-chevron-up"></i></a>
+    <header id="home" class="header">
+      <div class="container container-custom">
+        <div class="row">
+          <div class="col-8 col-lg-5 d-xl-flex align-items-center">
+            <nav class="navbar navbar-expand-md">
+              <a
+                href="#Navbar"
+                class="navbar-toggler third-button"
+                type="button"
+                data-bs-toggle="collapse"
+                aria-controls="Navbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <div class="animated-icon3">
+                  <span></span><span></span><span></span>
+                </div>
+              </a>
+              <div class="collapse navbar-collapse">
+                <ul
+                  class="
+                    navbar-nav
+                    d-lg-flex
+                    justify-content-around
+                    align-items-center
+                  "
+                >
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Главная</a
+                    >
+                    <img
+                      src="images/wave-line.png"
+                      alt=""
+                      class="item-active"
+                    />
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#goods">Товары</a>
+                    <img
+                      src="images/wave-line.png"
+                      alt=""
+                      class="item-active d-none"
+                    />
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer">Контакты</a>
+                    <img
+                      src="images/wave-line.png"
+                      alt=""
+                      class="item-active d-none"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-4 col-lg-3">
+            <div class="logo-wrapper">
+              <a href="#" class="logo">
+                <img src="images/logo.png" alt="Pool" />
+              </a>
+            </div>
+          </div>
+          <div class="d-none d-lg-flex col-lg-4 align-items-center">
+            <div
+              class="
+                phone-numbers
+                d-lg-flex
+                justify-content-between justify-content-xl-around
+                w-100
+              "
+            >
+              <span class="phone-number">+7 727 368 83 56</span>
+              <span class="phone-number">+7 771 964 36 50</span>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#goods">Товары</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="short-description">
+              <h1 class="title">Строительство бассейнов</h1>
+              <p class="description">
+                <strong>Полный спект работ:</strong> от проектирования и сдачи
+                “под ключ” до обслуживания или реконструкции вашего бассейна, а
+                также большой выбор товаров
+              </p>
+              <a type="button" href="#submit-form" class="submit"
+                >Оставить заявку</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="our-projects">
+      <h2 class="title">Наши работы</h2>
+      <div class="wave-line">
+        <img src="images/wave-line.png" alt="wave-line" />
+      </div>
+      <div class="slider">
+        <div class="owl-one owl-carousel">
+          <div>
+            <img src="images/slider-image1.png" alt="image1" />
+          </div>
+          <div>
+            <img src="images/slider-image2.png" alt="image2" />
+          </div>
+          <div>
+            <img src="images/slider-image3.png" alt="image3" />
+          </div>
+        </div>
+        <div class="owl-nav">
+          <div class="owl-prev"><</div>
+          <div class="owl-next">></div>
+        </div>
+      </div>
+    </section>
+    <section class="calculator">
+      <div class="container container-custom">
+        <h2 class="title">сколько будет стоить бассейн?</h2>
+        <div class="wave-line">
+          <img src="images/wave-line.png" alt="wave-line" />
+        </div>
+        <p class="description">
+          Ответьте на несколько вопросов и наши специалисты отправят вам смету в
+          течении <strong class="strong">1 рабочего дня</strong>
+        </p>
+        <div class="row">
+          <div
+            class="col-12 col-lg-6 d-md-flex d-lg-block justify-content-center"
+          >
+            <form class="calculation-form">
+              <label>
+                Отделка чаши:
+                <select>
+                  <option>Полипропилен</option>
+                  <option>Полипропилен1</option>
+                  <option>Полипропилен2</option>
+                </select>
+              </label>
+              <label>
+                Нагрев воды:
+                <select>
+                  <option>Нет</option>
+                  <option>Да</option>
+                </select>
+              </label>
+              <div class="slidecontainer">
+                Размер бассейна:
+                <input
+                  type="range"
+                  min="2"
+                  max="20"
+                  value="7"
+                  class="slider"
+                  id="myRange"
+                  oninput="getRange()"
+                />
+                <span class="range-value">7x3м</span>
+              </div>
+              <button class="submit">Оставить заявку</button>
+            </form>
+          </div>
+          <div class="col-12 col-lg-6 d-lg-flex align-items-center">
+            <div class="pool-wrapper">
+              <img class="pool" src="images/pool.png" alt="Swimmingpool" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="goods" class="goods">
+      <div class="container container-custom">
+        <h2 class="title">Товары для бассейна</h2>
+        <div class="wave-line">
+          <img src="images/wave-line.png" alt="wave-line" />
+        </div>
+        <ul class="goods-types">
+          <li class="goods-type active">Все</li>
+          <li class="goods-type pumps">Насосы</li>
+          <li class="goods-type heaters">Нагреватели</li>
+        </ul>
+        <div class="goods-items">
+          <div class="owl-two owl-carousel">
+            <div data-type="heaters">
+              <div class="card">
+                <img
+                  src="images/goods-image1.png"
+                  class="card-img-top"
+                  alt="Прожектор"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Прожектор под плитку с оправой из ABS-пластика
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-type="pumps">
+              <div class="card">
+                <img
+                  src="images/goods-image2.png"
+                  class="card-img-top"
+                  alt="Bestway"
+                />
+                <div class="card-body">
+                  <p class="card-text">Фильтровальная установка Bestway</p>
+                </div>
+              </div>
+            </div>
+            <div data-type="heaters">
+              <div class="card">
+                <img
+                  src="images/goods-image1.png"
+                  class="card-img-top"
+                  alt="Прожектор"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Прожектор под плитку с оправой из ABS-пластика
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-type="pumps">
+              <div class="card">
+                <img
+                  src="images/goods-image2.png"
+                  class="card-img-top"
+                  alt="Bestway"
+                />
+                <div class="card-body">
+                  <p class="card-text">Фильтровальная установка Bestway</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-nav">
+            <div class="owl-prev"><</div>
+            <div class="owl-next">></div>
+          </div>
+        </div>
+        <button class="submit">Смотреть все</button>
+      </div>
+    </section>
+    <section class="benefit">
+      <div class="container">
+        <div class="leafs d-none d-lg-block">
+          <img src="images/leafs.png" alt="Leafs" />
+        </div>
+        <h2 class="title">что вы получаете?</h2>
+        <div class="wave-line">
+          <img src="images/wave-line-white.png" alt="wave-line" />
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="benefit-item">
+              <img
+                src="images/time-management.png"
+                alt="Комплексная поддержка"
+              />
+              <p class="benefit-name">Комплексная поддержка</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="benefit-item">
+              <img src="images/research.png" alt="Индивдуальное предложение" />
+              <p class="benefit-name">Индивдуальное предложение</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="benefit-item">
+              <img src="images/hand.png" alt="Качественные материалы" />
+              <p class="benefit-name">Качественные материалы</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="submit-form" class="questions">
+      <div class="overlay-bg">
+        <img src="images/overlay-bg.png" alt="" />
+        <h2 class="title">сколько будет стоить бассейн?</h2>
+        <div class="wave-line">
+          <img src="images/wave-line.png" alt="wave-line" />
+        </div>
+        <p class="description">
+          Оставьте заявку и наши специалисты свяжутся с вами в ближайшее время
+        </p>
+        <form method="#" novalidate class="client-contacts">
+          <input type="hidden" name="project_name" value="Pool" />
+          <input
+            type="hidden"
+            name="admin_email"
+            value="dworker863@gmail.com"
+          />
+          <input type="hidden" name="form_subject" value="Test" />
+          <input
+            type="text"
+            name="fullname"
+            class="form-control"
+            placeholder="Имя"
+            required
+          />
+          <input
+            type="text"
+            name="phone"
+            class="form-control"
+            placeholder="Телефон"
+            required
+          />
+          <button type="submit" class="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div id="map" style="width: 100%; height: 100%"></div>
+      <div class="contacts">
+        <h3 class="contacts-title">Контакты</h3>
+        <p class="address">
+          <i class="fas fa-map-marker-alt"></i>Казахстан, Алматы, Байзакова,
+          263, 1 этаж, 5 офис
+        </p>
+        <p class="tel-number">
+          <i class="fas fa-phone-alt"></i> +7 727 368 83 56, +7 771 964 36 50
+        </p>
+        <p class="mail"><i class="fas fa-at"></i>info@pool.kz</p>
+      </div>
+    </footer>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
